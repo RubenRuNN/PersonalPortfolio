@@ -1,0 +1,34 @@
+.wrapper {
+    padding-top: rem(80px);
+    padding-bottom: rem(50px);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: rem(20px);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        flex-direction: column;
+    }
+}
+
+.itemImage {
+    flex: 1;
+}
+
+.itemDescription {
+    flex: 1;
+    width: '100%';
+}
+
+.itemTitle {
+    margin-bottom: calc(var(--mantine-spacing-xs) / 2);
+    display: flex;
+    gap: var(--mantine-spacing-xs);
+    align-items: center;
+}
+
+.itemTechnology {
+    margin-inline-end: rem(5px);
+}
